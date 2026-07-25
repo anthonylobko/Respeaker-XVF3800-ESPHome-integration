@@ -113,6 +113,8 @@ class AIC3104 : public audio_dac::AudioDac, public Component, public i2c::I2CDev
   bool write_mute_();
   bool write_volume_();
 
+  void log_output_registers_(const char *phase);
+
   float volume_{0};
 };
 
